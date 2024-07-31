@@ -1,0 +1,65 @@
+span.multiselect-native-select{position:relative}
+span.multiselect-native-select select{border:0!important;clip:rect(0 0 0 0)!important;height:1px!important;margin:-1px -1px -1px -3px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important;left:50%;top:30px}
+.multiselect-container{position:absolute;list-style-type:none;margin:0;padding:0}
+.multiselect-container .input-group{margin:0px}
+.multiselect-container .multiselect-reset .input-group{width:93%;}
+.multiselect-container>li{padding:0; border:1px solid #ccc;min-width:200px; }
+.multiselect-container>li { border-bottom:0px;}
+.multiselect-container>li:last-child {border-bottom:1px solid #ccc !important;}
+.multiselect-container>li>a.multiselect-all label{font-weight:700; color:#333;}
+.multiselect-container>li.multiselect-group label{margin:0;padding:3px 20px;height:100%;font-weight:700}
+.multiselect-container>li.multiselect-group-clickable label{cursor:pointer}
+.multiselect-container>li>a{padding:0;  color:#333;}
+.multiselect-container>li>a>label{margin:0;height:100%; width:100%;cursor:pointer;font-weight:normal; font-size:14px; padding:3px 10px 3px 10px}
+.multiselect-container>li>a>label.checkbox,.multiselect-container>li>a>label.radio{margin:0; }
+.multiselect-container>li>a>label>input[type=checkbox]{margin-bottom:5px}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn{border-top-left-radius:4px;border-bottom-left-radius:4px}
+.form-inline .multiselect-container label.checkbox,.form-inline .multiselect-container label.radio{padding:3px 20px 3px 40px}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox],.form-inline .multiselect-container li a label.radio input[type=radio]{margin-left:-20px;margin-right:0}
+.multiselect-container.dropdown-menu {position: absolute;
+transform: translate3d(0px, 20px, 0px) !important;
+top: 50% !important;
+left: 0px;overflow-y:scroll; max-height:200px;
+will-change: transform;}
+.agnt-cource .multiselect-container.dropdown-menu { width:100%;}
+.multiselect.dropdown-toggle.btn.btn-default{width:100%; margin-top:-8px;   overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; border:1px solid #ccc; background:#fff;}
+.btn-group, .btn-group-vertical { width:100% !important;}
+.search-button.read-more {
+
+    background: #114663;
+    color: #fff; border:0px; margin-top:50px;
+    padding: 5px 20px 7px; border-radius:5px;
+}
+.agentuname.form-control {margin-top:-8px; }
+.agentuname option.selct-opt { color:#007bff; font-size:15px !important; font-weight:bold !important;}
+.filter-title { background:#114663; color:#fff;padding:5px 10px;}
+/* width */
+.multiselect-container.dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.multiselect-container.dropdown-menu::-webkit-scrollbar-track {
+    background: #ccc; 
+}
+ 
+/* Handle */
+.multiselect-container.dropdown-menu::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.multiselect-container.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+
+.crm-login-button1 {
+    background: #4ea245;
+    color: #fff; border:0px; 
+    padding: 5px 20px 7px; border-radius:5px;}
+.dropagent .label-c {    background:#fff !important; color: #114663; border:1px solid #bbb; margin-left:2px; border-bottom:0px; padding:0px 10px; margin-top:20px; border-radius:5px 5px 0px 0px;}

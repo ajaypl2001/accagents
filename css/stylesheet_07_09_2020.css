@@ -1,0 +1,760 @@
+
+body{ padding:0; margin:0;
+
+  min-height: 80.3vh;
+ padding-bottom:60px; 
+}
+
+html{ position:relative;}
+
+
+
+/*-------------bg------------------*/
+
+/*------navbar------*/
+.navbar-brand { margin:0px 0px;}
+.navbar-nav { float:right;}
+.nav-bg{  background:rgb(255, 255, 255, 0.3) !important; width:100%; }
+.sticky-top {
+    transition: all 0.25s ease-in;
+}.navbar-toggler { border:1px solid #000 !important; padding:10px !important; z-index:999; position:relative; float:right !important;}
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.navbar{
+  position:fixed;
+  width:100%;
+ 
+  z-index:10; 
+  border-radius:0;
+  border-color:transparent;
+}.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link,  .nav-link,
+
+/*.navbar-default .navbar-nav > li > a{
+  color:#fff;
+  
+}*/
+
+
+/*.navbar-nav .dropdown-menu li a{ border-bottom:1px solid #eee;}*/
+.navbar-nav .dropdown-menu li:last-child a { border-bottom:none;}
+
+
+/*=-====Bootstrapthemes.co btco-hover-menu=====*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(64, 64, 64);
+}
+.btco-hover-menu a ,  .navbar > li > a {
+    text-transform: capitalize;line-height:90px; 
+    padding: 0px 8px; font-size:14px;
+}
+.btco-hover-menu .active a,
+.btco-hover-menu .active a:focus,
+.btco-hover-menu .active a:hover,
+.btco-hover-menu li a:hover,
+.btco-hover-menu li a:focus ,
+.navbar>.show>a,  .navbar>.show>a:focus,  .navbar>.show>a:hover{
+    color: #000;
+    background: transparent;
+    outline: 0;
+}
+
+.navbar-nav .fa-leaf { font-size:13px; margin-right:5px;}
+
+/*submenu style start from here*/
+
+
+.dropdown-menu {
+    padding: 0px 0; 
+    margin: 0 0 0;
+    border: 0px solid transition !important;
+    border: 0px solid rgba(0,0,0,.15);	
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; 
+
+}
+
+/*first level*/
+.navbar .show .dropdown-menu li:first-child a { border-top:0px;}
+
+.btco-hover-menu .collapse ul ul > li > a, .navbar .show .dropdown-menu > li > a, .navbar .show .dropdown-menu > li > a{  line-height:30px; border-top:1px solid #eee; color:#333; font-size:15px;}
+.btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li:hover > a, .navbar .show .dropdown-menu > li:hover > a{  color:#a80532; }
+
+.dropdown-toggle::after { margin-top:10px;}
+.navbar .show .dropdown-menu li:first-child a { border-top:0px;}
+/*second level*/
+
+
+/*third level*/
+.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu{ border-top:4px solid #a80532; background:rgb(255, 255, 255, 0.95); }
+.btco-hover-menu .collapse ul ul ul, .btco-hover-menu .collapse ul ul ul.dropdown-menu{border-top:4px solid #a80532; background:rgb(255, 255, 255, 0.95);}
+.btco-hover-menu .collapse ul ul ul ul, .btco-hover-menu .collapse ul ul ul ul.dropdown-menu{border-top:4px solid #a80532; background:rgb(255, 255, 255, 0.95);}
+
+/*Drop-down menu work on hover*/
+.btco-hover-menu{background: none;margin: 0;padding: 0;}
+
+
+.navbar.btco-hover-menu { background:#fff; width:100%; box-shadow:0px 0px 10px #333; padding:5px 0px;}
+.navbar-nav { margin-right:40px;}
+.collapse.navbar-collapse { width:auto!important;}
+
+
+/*------------------------main-div---------------------*/
+.main-div {  margin-top:130px;}
+
+/*----------------login-------------------*/
+#icon { width:40px; text-align:center; padding-top:8px;}
+.panel-default { background:#eee;}
+.profile { margin-top:-60px;}
+.panel-body { margin-top:90px; margin-bottom:80px;}
+
+
+/*-------------------modal----------------------*/
+.main-modal h5 { font-size:18px; margin-bottom:25px;}
+.main-modal .form-control { background:#eee; box-shadow:0px 0px 2px inset #ccc; border-radius:0px;}
+.border-left {border-left:1px solid #ccc;}
+.remarkShow p, .remarkShowPay div p, .remarktfShow p { background:#eee; padding:5px 10px;}
+.remarkShow, .remarkShowPay div, .remarktfShow  { border:1px solid #ccc; padding:10px;}
+.btn-submit, .editbtn, .confirmbtn1 { background:#064f88; border:#064f88; color:#fff;}
+.checklistClass .fa-check { font-size:16px; margin-top:3px;}
+.paymentClass2 {background:#e6b010; border:#ce9c09; color:#fff;}
+.paymentClass1, .checklistClass, .paymentClass, .tfClass {background:#28a745; border:#28a745; color:#fff;}
+
+.checklistClassgreen {background:#28a745; color:#fff;}
+
+span.btn-pending, .jmjm, .editbtn, .checklistClassred {color: #fff;
+    background-color:#d00606;
+    border-color: #d00606;}
+	td .btn.btn-sm {width:35px; height:35px; text-align:center; padding-top:6px;}
+	td .btn.btn-sm:hover { color:#fff;}
+	.btn-default.email_verify { padding:2px 20px;  background:#a80532; color:#fff;}
+	.submit_verify { width:100%;  color:#fff; background:#064f88;}
+	.cancelbtn, .cancelbtn:hover {  color:#fff;}
+.tfFileClass, .edit-aplic, .checklistClassyellow  {background:#e6b010; border:#ce9c09;; clear:both;  color:#fff;}
+.go-back-btn { float:left; background:#d00606; color:#fff; clear:both; margin:2px; }
+.go-back-btn:hover { color:#fff;}
+.submit-btn{ float:right; background:#064f88; color:#fff;margin:2px; }
+.main-modal label { font-size:15px;}
+
+.tooltip-inner { top:0px; margin-top:0px;
+  background-color: #064f88 !important;
+  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+  color: #fff; font-size:15px;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #064f88;
+}
+/*-------------------------application tabs------------------*/
+/*.application-tabs ul { background:#3185c5;border-bottom:1px solid #1d6093; height:52px; width:100%; color:#fff; border-radius:10px 10px 0px 0px;}
+.application-tabs { border:1px solid #1d6093; width:100%; padding:0px 0px 20px; border-radius:11px 11px 0px 0px;}
+.application-tabs ul span.sabbtn:focus { background:#fff; color:#1d6093;border:1px solid #1d6093; border-bottom:0px;}
+.application-tabs ul span.sabbtn { border-radius:5px 5px 0px 0px; margin-top:4px; position:relative; }
+*/
+.sabbtn .mb-icon { display:none;}
+
+.admin-dashboard {  width:100%; margin-top:-3px; background:#fff; padding:20px 10px; box-shadow:0px 0px 4px #064f88;}
+
+.bg-grey { background:#eee; width:100%; height:100%;}
+
+.tabs-style-tzoid nav ul li {
+	-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;
+	backface-visibility: hidden;  display:inline;
+auto;}
+
+.tabs-style-tzoid nav ul li .sabbtn { z-index:999;
+	padding: 0 3.5em 0 2.1em;
+	color: #fff;
+	-webkit-transition: color 0.3s;
+		-moz-transition: color 0.3s;
+	transition: color 0.2s;
+}
+
+/*@media screen and (max-width: 54em) {
+	.tabs-style-tzoid nav ul li span {
+		padding: 0 0.5em 0 0.3em;
+	}
+}
+
+*/
+.tabs-style-tzoid nav ul li.active .sabbtn,
+.tabs-style-tzoid nav ul li.active .sabbtn:hover {
+	color:#1d6093;
+}
+
+
+/* Nav */
+
+.tabs nav ul {
+	position: relative;
+display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	
+	list-style: none;
+
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display:inline; float:left;
+	margin: 0; color:#fff;
+	text-align: center;
+	
+	}
+
+.tabs nav .sabbtn {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2.5;
+}
+/*.tabs nav li:nth-child(1) .img-icon { background:url(../images/all1.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:60px; height:30px;
+}
+.tabs nav li:nth-child(2) .img-icon { background:url(../images/1.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:30px; height:30px;}
+.tabs nav li.active:nth-child(2) .img-icon { background:url(../images/1-1.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:30px; height:30px;
+}.tabs nav li:last-child .img-icon { background:url(../images/2.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:30px; height:30px;
+}.tabs nav li.active:last-child .img-icon { background:url(../images/2-2.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:30px; height:30px;
+}
+.tabs-style-tzoid nav ul li.active:nth-child(1) .img-icon{ background:url(../images/all2.png) no-repeat; background-size:90% 90%; margin-top:10px; float:left; width:60px; height:30px;}
+ */
+.tabs nav li.active .sabbtn {
+	color: #74777b;
+}
+
+.tabs nav .sabbtn:focus {
+	outline: none;
+}
+
+#mail-status p { text-align:center; width:100%;}
+.vertical_tab .nav-tabs li { text-align:center !important;}
+.tabs-style-tzoid nav ul li .sabbtn::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	outline: 1px solid transparent;
+	border-radius: 10px 10px 0 0;
+	background: #2c79b3;
+	box-shadow: inset 0 -3px 3px rgba(0,0,0,0.05);
+	content: '';
+	-moz-transform: perspective(4px) rotateX(0.99deg) translateZ(-1px);	
+	-webkit-transform: perspective(4px) rotateX(0.99deg) translateZ(-1px);
+	transform: perspective(4px) rotateX(0.99deg) translateZ(-1px);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li.active .sabbtn::after,
+.tabs-style-tzoid .content-wrap {
+	background: #fff; border:1px solid #064f88; border-bottom:0px;
+	box-shadow: none;
+}.tabs-style-tzoid nav ul li .sabbtn { z-index:999;
+	padding: 0 2.5em 0 1.1em;}
+
+
+
+
+.drop-select {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px; 
+}
+.drop-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 99% 0;
+   height: 32px; z-index:999;
+   overflow: hidden;
+
+}
+
+.drop-select select {
+   background: transparent;
+   border: none; width:100%;
+   font-size: 14px;
+   height: 32px;color:#fff;
+   padding: 4px; /* If you add too much padding here, the options won't show in IE */
+}
+.drop-select option { color:#333;}
+ .drop-select select.form-control:focus { background:none; color:#fff;}
+.drop-select  { background-color:#2c79b3;  }
+.profile { border-radius:50%;}
+.sabbtn img { float:left; margin:10px 2px 0px;}
+.mb-hide { width:auto;}
+
+
+
+
+.overclass {
+    margin:0;
+    overflow-x: hidden; overflow-y:hidden;
+    white-space: nowrap;
+    border-radius: 2px;
+    height: 480px; 
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;}
+/*
+.overclass h3, .overclass p { width:400px; }
+
+
+
+
+*/
+.pd-detail { float:left; width:240px; margin-right:20px;overflow-y:scroll}
+.pd-detail h3 { margin-top:5px; font-size:23px;}
+
+.pd-detail p {word-break:normal; white-space:normal;}
+.pd-detail::-webkit-scrollbar, .overclass::-webkit-scrollbar
+{	
+   -moz-appearance: none !important;width: 0px; height:0px;	background-color: #fff;}
+
+
+.totalPrice { background:#e6b010; width:35px; margin-top:20px; color:#fff; height:35px;padding:5px; border-radius:30px;}
+
+.check-btn {
+    display: block;
+    position: relative;  left:-16px; 
+
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+ 
+    height: 35px;
+    width: 35px; border-radius:4px;
+  border:2px solid #28a745;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.check-btn input:checked ~ .checkmark {
+  border:2px solid #28a745;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-btn input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-btn .checkmark:after {
+    left: 13px;
+    top: 7px;
+    width: 8px;
+    height: 15px;
+    border: solid #28a745;
+    border-width: 0 3.4px 3.4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.table-bordered td, .table-bordered th {
+    text-align: center !important;
+    border: 1px solid #dee2e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column{  border:none; box-shadow:0px 0px 5px #333; margin-bottom:50px;}
+
+.column {
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.well {background:#3498db; color:white; font-family:"Times New Roman", Times, serif; font-size:25px; padding-bottom:20px; padding-top:10px;}
+
+.well {
+  width: 100%;
+  height: 65px;
+  border: none;
+  background: #3498db;
+  color: #ecf0f1;
+  border-radius: 5px;
+  transition: all ease-in-out .2s;
+  border-bottom: 3px solid #2980b9;
+}
+
+.well:hover {
+  background: #2980b9;
+}
+
+#icon {background:#999999; color:white;}
+
+.btn-block1 {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #3498db;
+  color: #ecf0f1;
+  font-weight: 100;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  transition: all ease-in-out .2s;
+  border-bottom: 3px solid #2980b9;
+}
+
+.btn-block1:focus {
+  outline: none;
+}
+
+.btn-block1:hover {
+  background: #2980b9;
+}
+
+<!----end of register page--->
+
+
+<!--- strat of signin page-->
+
+.signin-page {
+  font: 16px Helvetica;
+}
+
+/*.profile{
+  box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+  width:130px;
+  height: 130px;
+  margin:0px auto 0;
+  padding:0px;
+  display:block;
+  border-radius:100px;
+  
+}
+.top {margin-top:150px; background:#EAEAEA;}
+
+*/
+.btn-block {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #3498db;
+  color: #ecf0f1;
+  font-weight: 100;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: all ease-in-out .2s;
+  border-bottom: 3px solid #2980b9;
+}
+
+.btn-block:focus {
+  outline: none;
+}
+
+.btn-block:hover {
+  background: #2980b9;
+}
+
+
+<!---end of signin page-->
+
+<!---dashboard button--->
+.button{ text-align:center;
+        
+       
+}
+
+.btn-block2{
+    padding-top:20px;
+	padding-bottom:20px;
+    display: block;
+    width:100%; max-width:350px;
+    border: none;
+    background-color:#009ACD;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+	margin:50px auto 9px;
+    border-radius: 10px;
+    transition: all ease-in-out .1s;
+    border-bottom: 5px solid #2e6da4;
+	border-right: 3px solid #2e6da4;
+	box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+.btn-block2:focus {
+  outline: none;
+}
+
+.btn-block2:hover {
+    background-color:;
+    color: white;
+}
+
+
+.nav-tabs {border-top: 1px solid #999999;}
+
+.nav-tabs li span.btn { width:100%;}
+#icon {background-color:#337ab7; border-color:#2e6da4; color:white;}
+
+#details { background:#F4F4F4; border:1px solid #999999; margin:5px; padding-bottom:10px; box-shadow:4px 4px 20px grey;}
+
+.nav-tabs li{  
+  position: relative;
+  background: #1abc9c;
+  }
+  
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+  
+.nav-tabs li::before,
+.nav-tabs li::after {
+  content: "";
+  display: table;
+}
+.nav-tabs li::after {
+  clear: both;
+}
+.nav-tabs li {
+  float: left;
+}
+		
+
+.nav-tabs > li:hover:after, .nav-tabs .active:after {
+    content: "";
+    border-top: 15px solid #FF8C00;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 43px;
+    right: 100px;
+}
+
+.nav-tabs > li{
+    border-radius: 0px;
+    background:#337ab7;
+    padding:5px 5px ;
+    color:#fff;
+	font-size:20px; width:25%;
+	font:Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 25px 2px rgba(0,0,0,0.4);
+	transition: padding 0.2s ease, margin 0.2s ease;
+}
+.nav-tabs > li:hover{
+    background: #FF8C00  ;
+    transition:0.1s ease;
+}
+#verify h3.folded { text-shadow:0px !important;}
+.folded a { color:#fff; text-align:center; font-size:18px; text-shadow:0px;}
+.folded{
+    background-image: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.2));
+    border: 0 solid rgba(0,0,0,0.2);
+    color: #fff;
+    font-weight: bold;
+	margin-top:15px;
+    position: relative;
+    background: #FF8C00;
+    padding: 10px; 
+    clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+    font-family: "font_condensed";
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }	
+  
+   @media only screen and (max-width: 600px) {
+            .folded {
+                font-size: 20px;
+				text-align:center;
+            }
+        }
+  
+ 
+.tab-content{ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); width:100%; margin-bottom:40px; padding-bottom:30px; background:#FFFFFF; float:left; }
+
+h3{ color: #337ab7;
+margin-top:25px; margin-bottom:20px;
+	font-size: 27px;
+	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:left;
+    } 
+	
+h5{font-size:21px; text-decoration:underline; color:#0080FF; text-align:left;}
+
+.next{background:#FF8C00; border-color:#FF8C00;}
+
+
+@media only screen and (max-width: 600px) {
+
+.control-label{text-align:left !important; padding-left:5px;}
+}
+
+/*Application Style Starting*/
+
+/* tr:nth-child(even) { */
+    /* background-color:#A8D8F4; */
+/* } */
+
+table thead {background-color:#596164; color:white; font-size:15px;}
+
+table thead tr th {text-align:center; font-size:18px;}
+
+
+.table-bordered{ width:100%;
+		border: 1px solid #ccc;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+	
+.vertical_table{text-align:center;}
+	
+{
+
+
+.paybtn{background:green;}
+
+
+
+				 
+.overclass center strong {
+    font-size: 25px;
+	text-decoration:underline;
+	color:#337ab7;
+	}
+	
+.overclass strong {
+    font-size: 16px;
+	font:Arial, Helvetica, sans-serif;
+	color:#53A9FF;
+	}
+/*Backend application styling*/
+
+
+.table-bordered{ width:100%;
+		         border: 1px solid #ccc;
+                 box-shadow: 3px 3px 2px #ccc;
+                 transition: 0.5s;}
+				 
+				 	.table-bordered td {
+    text-align: center !important;
+}
+	
+/* tr:nth-child(even) { */
+    /* background-color:#A8D8F4; */
+/* } */
+
+table thead {background-color:#596164; color:white; font-size:15px; text-align:center;}
+
+table thead tr th {text-align:center; font-size:18px;}
+
+table thead tr th:last-child { width:200px;}
+
+
+
+
+/*.table>tbody>tr>td {
+    padding: 3px;
+	margin-top:3px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}*/
+		 
+.overclass center strong {
+    font-size: 25px;
+	text-decoration:underline;
+	color:#337ab7;
+	}
+	
+.overclass strong {
+    font-size: 16px;
+	font:Arial, Helvetica, sans-serif;
+	color:#53A9FF;
+	}
+
+ .table-responsive {
+    white-space:nowrap;
+}
+
+
+
+
+.form-vertical .verify-emaiid, .form-vertical label { font-size:16px !important;}
+.Application-Details1 .control-label { float:left; width:auto;}
+
+/*------------------footer-----------------*/
+.footer { background:#262b2f;}
+
+.footer p { width:100%; text-align:center;}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+.search-col { margin-top:-30px !important;}
