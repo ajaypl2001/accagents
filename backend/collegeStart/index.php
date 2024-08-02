@@ -215,7 +215,7 @@ if (isset($_POST['submitbtn'])) {
 	$spr = ''; //$_POST['spr'];	
 	$datetime_at = date('Y-m-d H:i:s');
 
-	$agnt_qry25 = mysqli_query($con, "SELECT sno, fname, lname, on_off_shore, email_address, prg_intake, prg_name1 FROM st_application where sno='$app_id'");
+	$agnt_qry25 = mysqli_query($con, "SELECT sno, fname, lname, on_off_shore, email_address, prg_intake, prg_name1 FROM both_main_table where sno='$app_id'");
 	$row_agnt_qry25 = mysqli_fetch_assoc($agnt_qry25);
 	$firstname = $row_agnt_qry25['fname'];
 	$lastname = $row_agnt_qry25['lname'];
@@ -526,7 +526,7 @@ if (isset($_POST['submitbtn'])) {
 		$qryDelete = "DELETE FROM `m_student` WHERE vnumber ='$stid' AND app_id='$app_id'";
 		mysqli_query($con, $qryDelete);
 
-		$getQry2 = "UPDATE `st_application` SET `tearcher_assign`='', `tearcher_assign_old`='' WHERE `sno` ='$app_id'";
+		$getQry2 = "UPDATE `both_main_table` SET `tearcher_assign`='', `tearcher_assign_old`='' WHERE `sno` ='$app_id'";
 		mysqli_query($con, $getQry2);
 
 	} else {
@@ -559,7 +559,7 @@ if (isset($_POST['submitbtn'])) {
 		mysqli_query($con, $queryVgr2);
 	}
 
-	$getInQry4 = "UPDATE `st_application` SET `student_status`='$with_dism' WHERE `sno`='$app_id'";
+	$getInQry4 = "UPDATE `both_main_table` SET `student_status`='$with_dism' WHERE `sno`='$app_id'";
 	mysqli_query($con, $getInQry4);
 
 	$querylog = "INSERT INTO `start_college_logs` (`dismissal_date`,`app_id`, `with_dism`, `refund_rp`, `followup_status`, `follow_date`, `rproccess`, `yesp_amount`, `remarks`, `datetime_at`, `inp_program`, `inp_start_date`, `inp_end_date`, `in_w_d`, `program_change`, `spr`) VALUES ('$dismissal_date','$app_id', '$with_dism', '$refund_rp', '$followup_status', '$follow_date', '$rproccess', '$yesp_amount', '$remarks', '$datetime_at', '$inp_programLog', '$inp_start_dateLog', '$inp_end_dateLog', '$contact_person', '$program_change', '$spr')";
@@ -581,7 +581,7 @@ if (isset($_POST['stNameSbtBtn'])) {
 	$slctQry_34 = "INSERT INTO `student_details_update` (`role`, `app_id`, `old_mobile`, `old_email_address`, `old_address1`, `mobile`, `email_address`, `address1`, `updated_by_name`, `updated_datetime`) VALUES ('IN', '$app_id', '$old_mobile', '$old_email_address', '$old_address1', '$mobile', '$email_address', '$address1', '$updated_by_name', '$datetime_at')";
 	mysqli_query($con, $slctQry_34);
 
-	$slctQry_3 = "UPDATE `st_application` SET `mobile`='$mobile', `email_address`='$email_address', `address1`='$address1' WHERE `sno`='$app_id'";
+	$slctQry_3 = "UPDATE `both_main_table` SET `mobile`='$mobile', `email_address`='$email_address', `address1`='$address1' WHERE `sno`='$app_id'";
 	mysqli_query($con, $slctQry_3);
 	header("Location: ../collegeStart/?getIntake=$getIntake2&SuccessFully_Submit$search_url&getStatus=$getStatus");
 }
@@ -780,7 +780,7 @@ $rsltQuery = "SELECT * FROM both_main_table where student_id!='' AND v_g_r_statu
 									<option value="">V-G Submit Date</option>
 									<option value="">All</option>
 									<?php
-									$rsltQuery6 = "SELECT v_g_r_status_datetime FROM st_application where v_g_r_status='V-G' AND (STR_TO_DATE(prg_intake, '%b-%Y')) >= '2024-05-00' Group BY DATE_FORMAT(v_g_r_status_datetime, '%Y-%m-%d') ORDER BY v_g_r_status_datetime DESC";
+									$rsltQuery6 = "SELECT v_g_r_status_datetime FROM both_main_table where v_g_r_status='V-G' AND (STR_TO_DATE(prg_intake, '%b-%Y')) >= '2024-05-00' Group BY DATE_FORMAT(v_g_r_status_datetime, '%Y-%m-%d') ORDER BY v_g_r_status_datetime DESC";
 									$qurySql6 = mysqli_query($con, $rsltQuery6);
 									while ($row_nm6 = mysqli_fetch_assoc($qurySql6)) {
 										$intake36_1 = $row_nm6['v_g_r_status_datetime'];
@@ -1040,7 +1040,7 @@ $rsltQuery = "SELECT * FROM both_main_table where student_id!='' AND v_g_r_statu
 													data-id="<?php echo $snoid; ?>"
 													st-no="<?php echo $fname . ' ' . $lname; ?>"></i>
 											</td>
-										
+
 											<!-- <?php if ($sessionid1 != '4792' && $sessionid1 != '4293' && $getStatus != 'Dismissed') { ?> -->
 												<td>
 													<?php
@@ -1067,7 +1067,7 @@ $rsltQuery = "SELECT * FROM both_main_table where student_id!='' AND v_g_r_statu
 														data-passp="<?php echo $passport_no; ?>">Add Status</span>
 													<?php echo $study_permit_FileCheck; ?>
 												</td>
-											<!-- <?php } ?> -->
+												<!-- <?php } ?> -->
 											<td style="white-space: nowrap;">
 												<!-- <?php if ($sessionid1 == '4792' || $sessionid1 == '4293' || ($sessionid1 == '3738' && $getStatus == 'Dismissed')) { ?> -->
 													<span class="btn btn-sm btn-success statusClass my-1" data-toggle="modal"
@@ -1082,7 +1082,7 @@ $rsltQuery = "SELECT * FROM both_main_table where student_id!='' AND v_g_r_statu
 														data-name="<?php echo $fullname; ?>">Logs</span>
 													<?php
 													?>
-												<!-- <?php } else { ?> -->
+													<!-- <?php } else { ?> -->
 													<?php if (!empty($study_permit_yes2) && $study_permit_yes2 == 'Yes') { ?>
 														<span class="btn btn-sm btn-success statusClass my-1" data-toggle="modal"
 															data-target="#statusModal" data-id="<?php echo $snoid; ?>"
