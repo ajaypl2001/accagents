@@ -1,0 +1,131 @@
+@charset "utf-8";
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width:767px){
+.navbar-collapse { background:#fff;}
+.navbar { padding:0px !important;}
+li.nav-item {  width:100%; text-align:right; border-bottom:1px solid #ccc;}
+
+.navbar-toggler {
+       margin-top: 15px; background:#fff;}
+	   .navbar-nav li { border-bottom:1px solid #ccc; padding:10px; width:100%;}
+.btco-hover-menu .collapse ul ul > li > a, .navbar .show .dropdown-menu > li > a, .navbar .show .dropdown-menu > li > a{ border:none;}
+
+.navbar-nav { float:left; width:100%; text-align:right;}
+
+li.nav-item {  width:100%; text-align:right; border-bottom:1px solid #ccc;}
+ .box { text-align:center;}
+ .box .icon { width:100%;}
+  .box h4 { width:100%;
+    margin-left: 0px; margin-top:20px;
+   
+}.stuck .sticky-top .logo { width:110px !impportant;}
+.box .icon i { margin:20px auto;}
+.sticky-top { }
+.box p { width:100%;
+    
+    margin-left:0px;
+    
+}
+.parallax { height:1800px !important;}
+  #paralax-overlay {
+    height:1800PX !important;
+
+  }
+
+ul .search-col { float:left; clear:both; margin-left:-100%; padding:0px; }
+ul .search-col input#searchbtn {
+    float: left;
+   left:0px; margin-left:0px;
+    right: 0px; padding:5px 10px; margin-bottom:8px; margin-right:0px;
+
+}.tabs-style-tzoid nav ul li span {
+	padding: 0 3.0em 0 2em !important;}
+	.vertical_tab .nav-tabs li { text-align:center;}
+.vertical_tab .nav-tabs li i { float:none !important; margin:auto !important;}
+.sabbtn .mb-icon { display:inline !important;}
+.sabbtn img { margin:10px 0px;}
+.tabs-style-tzoid nav ul .mb-margin { margin-top:50px; }
+.mb-hide, .sabbtn .mb-hide { display:none;}
+.navbar-nav .nav-link { padding-right:20px !important;}
+.dropdown-menu {
+
+ box-shadow:none; 
+}
+.dropdown-menu li
+{text-align:right; line-height:40px;}
+
+}
+@media screen and (max-width: 450px) {
+  .sideform {padding-top: 15px;}
+  .sideform a {font-size: 18px;}
+ 
+}
+@media (max-width:1024px){
+.Instructors-SHOW { display:none;}
+  .parallax { height:850px;}
+  #paralax-overlay {
+    height:850PX ;
+
+  }
+   .btco-hover-menu a ,  .navbar > li > a {
+    text-transform: capitalize;
+    padding: 0px 10px; font-size:14px;
+}
+  }
+  @media (max-width:768px){ 
+  	.navbar-brand { margin:10px 0px; }
+		.navbar-brand img {width:80%;}
+  .Instructors-SHOW { display:inline;}
+  .parallax { height:1150px;}
+  #paralax-overlay {
+    height:1150PX ;
+
+  }
+  .navbar-brand{ width:200px;}
+ 
+  .Instructors { margin-bottom:20px;}
+ }
+ 
+@media only screen and (max-width: 991px) {
+ 
+	 .tabs-style-tzoid nav ul li span { font-size:14px; line-height:50px;
+}
+
+				   .btco-hover-menu .show > .dropdown-toggle::after{
+        transform: rotate(-90deg);
+    }
+	
+	.btco-hover-menu a ,  .navbar > li > a {
+    text-transform: capitalize;
+    padding: 0px 3px; font-size:13px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link  {  padding-right: .2rem; line-height:80px !important; 
+    padding-left: 0rem !important;}
+}
+@media only screen and (min-width: 991px) {
+ .btco-hover-menu a ,  .navbar > li > a {}
+	.navbar-expand-md .navbar-nav .nav-link  ul ul li, .btco-hover-menu .collapse ul ul > li > a, .navbar .show .dropdown-menu > li > a, .navbar .show .dropdown-menu > li > a { line-height:30px !important; 
+   }
+   .navbar-expand-md .navbar-nav .nav-link
+    .btco-hover-menu .collapse ul li{position:relative;}
+    .btco-hover-menu .collapse ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;}
+    /*******/
+    .btco-hover-menu .collapse ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;display:none}
+    /*******/
+    .btco-hover-menu .collapse ul ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
+    .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;display:none;z-index:1}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+	.tabs-style-tzoid nav ul li span { z-index:999;
+	padding: 0 2em 0 1em !important; }
+}
